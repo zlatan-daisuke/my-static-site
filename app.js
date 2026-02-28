@@ -1,6 +1,3 @@
-document.getElementById("msg").textContent = "This is a static site (HTML/CSS/JS).";
-document.getElementById("btn").addEventListener("click", () => {
-  alert("It works!");
+document.getElementById("magicBtn").addEventListener("click", function () {
+  alert("GitHub Actions 経由でデプロイされました 🚀");
 });
-
-// feature-3 change
