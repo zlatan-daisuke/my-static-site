@@ -2,16 +2,373 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>My Cool Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zlatan Ibrahimović – The Legend</title>
   <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
 
-  <section class="hero">
-    <h1>Welcome to My World</h1>
-    <p>Azure × GitHub × Git</p>
-    <button id="magicBtn">Click Me</button>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">ZLATAN</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">プロフィール</a></li>
+        <li><a href="#stats">スタッツ</a></li>
+        <li><a href="#career">キャリア</a></li>
+        <li><a href="#quotes">名言</a></li>
+        <li><a href="#achievements">タイトル</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">THE LEGEND</p>
+      <h1 class="hero-title">
+        <span class="hero-first">ZLATAN</span>
+        <span class="hero-last">IBRAHIMOVIĆ</span>
+      </h1>
+      <p class="hero-tagline">神は自分を作るのに、特別な時間をかけた。</p>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-label">ポジション</span>
+          <span class="meta-value">フォワード</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">国籍</span>
+          <span class="meta-value">スウェーデン</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">身長</span>
+          <span class="meta-value">195 cm</span>
+        </div>
+      </div>
+      <a href="#about" class="hero-btn">詳細を見る</a>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+    </div>
   </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PROFILE</span>
+        <h2 class="section-title">プロフィール</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="visual-number">10</div>
+          <div class="visual-badge">LEGEND</div>
+        </div>
+        <div class="about-content">
+          <h3 class="about-name">Zlatan Ibrahimović</h3>
+          <p class="about-text">
+            1981年10月3日、スウェーデンのマルメに生まれる。ボスニア人の父とクロアチア人の母を持ち、
+            移民街での困難な幼少期を乗り越えてサッカー界の頂点へ上り詰めた。
+          </p>
+          <p class="about-text">
+            マルメFF、アヤックス、ユヴェントス、インテル・ミラノ、バルセロナ、ACミラン、PSG、
+            マンチェスター・ユナイテッド、LAギャラクシーと9クラブを渡り歩き、どこでも圧倒的な存在感を放った。
+          </p>
+          <p class="about-text">
+            4カ国でリーグ優勝を経験した唯一の選手として歴史に名を刻み、スウェーデン代表として62ゴールを記録。
+            その圧倒的なフィジカルと卓越した技術、比類なき自信は「Zlatan」という名前をサッカー史に永遠に刻み込んだ。
+          </p>
+          <div class="about-details">
+            <div class="detail-row">
+              <span class="detail-label">生年月日</span>
+              <span class="detail-value">1981年10月3日</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">出身地</span>
+              <span class="detail-value">マルメ, スウェーデン</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">利き足</span>
+              <span class="detail-value">両足</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">体重</span>
+              <span class="detail-value">95 kg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats" id="stats">
+    <div class="stats-bg"></div>
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">STATISTICS</span>
+        <h2 class="section-title">キャリアスタッツ</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">⚽</div>
+          <div class="stat-number" data-target="570">0</div>
+          <div class="stat-label">クラブ通算ゴール</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🏴</div>
+          <div class="stat-number" data-target="62">0</div>
+          <div class="stat-label">スウェーデン代表ゴール</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🏆</div>
+          <div class="stat-number" data-target="33">0</div>
+          <div class="stat-label">タイトル獲得数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🥇</div>
+          <div class="stat-number" data-target="12">0</div>
+          <div class="stat-label">リーグ優勝回数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">👕</div>
+          <div class="stat-number" data-target="9">0</div>
+          <div class="stat-label">在籍クラブ数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌍</div>
+          <div class="stat-number" data-target="4">0</div>
+          <div class="stat-label">制覇したリーグ国数</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Timeline -->
+  <section class="career" id="career">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CAREER</span>
+        <h2 class="section-title">キャリア年表</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">1999 – 2001</div>
+            <div class="tl-club">マルメ FF</div>
+            <div class="tl-country">🇸🇪 スウェーデン</div>
+            <div class="tl-record">16試合 / 16ゴール</div>
+            <p class="tl-desc">地元クラブでプロキャリアをスタート。若き天才の片鱗を見せ、オランダの名門アヤックスへ移籍。</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2001 – 2004</div>
+            <div class="tl-club">アヤックス</div>
+            <div class="tl-country">🇳🇱 オランダ</div>
+            <div class="tl-record">110試合 / 48ゴール</div>
+            <p class="tl-desc">エールディヴィジ2連覇を達成。この頃に磨いた技術と身体能力が後のキャリアの礎となった。</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2004 – 2006</div>
+            <div class="tl-club">ユヴェントス</div>
+            <div class="tl-country">🇮🇹 イタリア</div>
+            <div class="tl-record">92試合 / 26ゴール</div>
+            <p class="tl-desc">セリエAで存在感を発揮。カルチョポリ問題でチームが降格後、宿敵インテルへ移籍する選択が話題に。</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2006 – 2009</div>
+            <div class="tl-club">インテル・ミラノ</div>
+            <div class="tl-country">🇮🇹 イタリア</div>
+            <div class="tl-record">117試合 / 57ゴール</div>
+            <p class="tl-desc">セリエA3連覇を達成。毎シーズン20ゴール以上を記録し、イタリア最優秀選手にも選ばれた。</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2009 – 2010</div>
+            <div class="tl-club">バルセロナ</div>
+            <div class="tl-country">🇪🇸 スペイン</div>
+            <div class="tl-record">46試合 / 22ゴール</div>
+            <p class="tl-desc">リーガ優勝を経験。しかしグアルディオラとの確執は語り草となり、わずか1シーズンでACミランへ。</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2010 – 2012</div>
+            <div class="tl-club">AC ミラン（第1期）</div>
+            <div class="tl-country">🇮🇹 イタリア</div>
+            <div class="tl-record">85試合 / 56ゴール</div>
+            <p class="tl-desc">2シーズンで56ゴールという驚異的な数字を残し、チームをセリエA優勝に導いた。</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2012 – 2016</div>
+            <div class="tl-club">パリ・サンジェルマン</div>
+            <div class="tl-country">🇫🇷 フランス</div>
+            <div class="tl-record">180試合 / 156ゴール</div>
+            <p class="tl-desc">リーグ・アン4連覇。PSG歴代最多得点記録を更新。「王のように来て、伝説として去った」。</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2016 – 2018</div>
+            <div class="tl-club">マンチェスター・ユナイテッド</div>
+            <div class="tl-country">🏴󠁧󠁢󠁥󠁮󠁧󠁿 イングランド</div>
+            <div class="tl-record">53試合 / 29ゴール</div>
+            <p class="tl-desc">35歳でプレミアリーグに挑戦。EFLカップとUEFAヨーロッパリーグ優勝に貢献した。</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2018 – 2019</div>
+            <div class="tl-club">LA ギャラクシー</div>
+            <div class="tl-country">🇺🇸 アメリカ</div>
+            <div class="tl-record">58試合 / 53ゴール</div>
+            <p class="tl-desc">MLSでも怪物ぶりを発揮。デビュー戦での豪快なロングシュートゴールは世界中で話題になった。</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2020 – 2022</div>
+            <div class="tl-club">AC ミラン（第2期）</div>
+            <div class="tl-country">🇮🇹 イタリア</div>
+            <div class="tl-record">29試合 / 8ゴール</div>
+            <p class="tl-desc">38歳で古巣に電撃復帰。2021-22シーズンにはACミランのセリエA優勝を経験し、有終の美を飾った。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quotes -->
+  <section class="quotes" id="quotes">
+    <div class="quotes-bg"></div>
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">QUOTES</span>
+        <h2 class="section-title">伝説の名言</h2>
+      </div>
+      <div class="quotes-slider" id="quotesSlider">
+        <div class="quote-card active">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">私はズラタン・イブラヒモヴィッチだ。紹介など必要ない。</p>
+          <div class="quote-src">— Zlatan Ibrahimović</div>
+        </div>
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">私を買うということは、フェラーリを買うということだ。もしフェラーリにバスのように乗りたいなら、バスを買えばいい。</p>
+          <div class="quote-src">— Zlatan Ibrahimović</div>
+        </div>
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">ズラタンなしのワールドカップは見る価値がない。</p>
+          <div class="quote-src">— Zlatan Ibrahimović</div>
+        </div>
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">私は自分がどれほど完璧かを笑わずにはいられない。</p>
+          <div class="quote-src">— Zlatan Ibrahimović</div>
+        </div>
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">王のように来て、伝説として去った。</p>
+          <div class="quote-src">— Zlatan Ibrahimović（PSG 退団時）</div>
+        </div>
+        <div class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">私には自分自身以外の神は必要ない。</p>
+          <div class="quote-src">— Zlatan Ibrahimović</div>
+        </div>
+      </div>
+      <div class="quotes-nav">
+        <button class="q-btn" id="quotePrev">&#8592;</button>
+        <div class="q-dots" id="qDots"></div>
+        <button class="q-btn" id="quoteNext">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="achievements" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ACHIEVEMENTS</span>
+        <h2 class="section-title">主なタイトル・受賞歴</h2>
+      </div>
+      <div class="ach-grid">
+        <div class="ach-card">
+          <h3 class="ach-title">🏆 クラブタイトル</h3>
+          <ul class="ach-list">
+            <li><span class="ach-year">2001-02, 03-04</span>エールディヴィジ優勝（アヤックス）</li>
+            <li><span class="ach-year">2006-07〜08-09</span>セリエA 3連覇（インテル）</li>
+            <li><span class="ach-year">2009-10</span>リーガ エスパニョーラ優勝（バルセロナ）</li>
+            <li><span class="ach-year">2011-12</span>セリエA優勝（ACミラン）</li>
+            <li><span class="ach-year">2012-13〜2015-16</span>リーグ・アン 4連覇（PSG）</li>
+            <li><span class="ach-year">2016-17</span>UEFAヨーロッパリーグ（マンU）</li>
+            <li><span class="ach-year">2016-17</span>EFL カップ（マンU）</li>
+            <li><span class="ach-year">2021-22</span>セリエA優勝（ACミラン）</li>
+          </ul>
+        </div>
+        <div class="ach-card">
+          <h3 class="ach-title">🥇 個人タイトル</h3>
+          <ul class="ach-list">
+            <li><span class="ach-year">2005, 2007-12, 2015</span>スウェーデン年間最優秀選手（Guldbollen）</li>
+            <li><span class="ach-year">2008-09</span>セリエA 最優秀外国籍選手</li>
+            <li><span class="ach-year">2012-13〜15-16</span>リーグ・アン得点王</li>
+            <li><span class="ach-year">2012-13</span>UEFA 最優秀フォワード</li>
+            <li><span class="ach-year">2013</span>FIFA プシュカーシュ賞</li>
+            <li><span class="ach-year">2020</span>スウェーデン スポーツ大賞</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">ZLATAN</div>
+      <p class="footer-quote">"I am not like everybody else."</p>
+      <p class="footer-copy">&copy; 2024 Zlatan Ibrahimović Fan Site. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="app.js"></script>
 </body>
